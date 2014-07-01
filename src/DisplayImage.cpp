@@ -101,13 +101,16 @@ int main( int argc, char** argv )
 
 #ifdef IMAGE_OUTPUT
   // store image
-  imwrite( "output.png", output);
+  //imwrite( "output.png", output);
 
   namedWindow( "Display Image", WINDOW_AUTOSIZE );
   imshow( "Display Image", image );
 
   namedWindow( "Display output", WINDOW_AUTOSIZE );
   imshow( "Display output", output );
+
+  namedWindow( "Display gray", WINDOW_AUTOSIZE );
+  imshow( "Display gray", gray );
 
   waitKey(0);
 #endif
